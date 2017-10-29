@@ -9,7 +9,17 @@
     margin: auto;
     margin-bottom: 30px;
 }
-
+.spons-content-med{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    height:225px;
+    max-width: 220px;
+    transition: 0.3s;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
 .spons-content-big{
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -35,10 +45,17 @@
     width: 150px;
     vertical-align: middle;
 }
+.spons-content-med img{
+    width: 200px;
+    vertical-align: middle;
+}
 .spons-content-big img{
     width: 225px;
     vertical-align: middle;
 }
 #heroku{
     width: 100px;
+}
+#gitlab{
+    width:150px;
 }
