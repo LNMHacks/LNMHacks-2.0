@@ -38,7 +38,7 @@
 }
 .helper {
     display: inline-block;
-    height: 100%;
+    height: 80%;
     vertical-align: middle;
 }
 .spons-content img{
@@ -53,9 +53,18 @@
     width: 225px;
     vertical-align: middle;
 }
-#heroku{
-    width: 100px;
+.sponsorText{
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;  
+    height:20%;
 }
-#gitlab{
-    width:150px;
+.lar{
+    font-size:1.5rem;
+}
+.med{
+    font-size:1.2rem;
+}
+.sma{
+    font-size:1rem;
 }
