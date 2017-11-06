@@ -1,4 +1,4 @@
-s/**
+/**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -329,7 +329,6 @@ a img{
       min-height: 300px;
     }
 
-
 @media (max-width: 450px) { 
     .lnmhacks-wear-section {
       position: relative;
@@ -339,6 +338,24 @@ a img{
       min-height: 900px;
     }
 }
+
+
+.lnmhacks-wear-section.judges-pk {
+      position: relative;
+      /*background: url('images/wear.jpg');*/
+      background: #fff;
+      background-repeat: no-repeat;
+      min-height: 300px;
+    }
+
+@media (max-width: 450px) { 
+    .lnmhacks-wear-section.judges-pk {
+      position: relative;
+      background: #fff;
+      background-repeat: no-repeat;
+    }
+}
+
 
 .lnmhacks-wear-band {
   position: absolute;
