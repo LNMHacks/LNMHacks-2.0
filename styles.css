@@ -449,7 +449,7 @@ a img{
 .lnmhacks-sponsors-section-image {
   background: #fff;
   background-size: cover;
-  min-height: 400px;
+  /*min-height: 400px;*/
 }
 
 .lnmhacks-more-section {
