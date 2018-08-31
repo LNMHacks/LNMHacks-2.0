@@ -605,6 +605,7 @@ a img{
 
   .lnmhacks-be-together-section {
     height: 350px;
+    
   }
 
   .lnmhacks-slogan {
@@ -996,3 +997,114 @@ body::-webkit-scrollbar-thumb
 }
 
 /*=====  End of Cards Override Sponosrs  ======*/
+/*CSS for timer */
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500);
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+/* :root {
+  background: #212121;
+  color: #cdd3de;
+  font-family: 'Dosis', sans-serif;
+} */
+
+/* body {
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+ .cl {
+  /* color: #cdd3de; */
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+ 
+
+#js-clock {
+  
+  display: flex;
+  margin-bottom: 1px;
+  margin-top: 1.5%;
+  
+
+  font-family: 'Dosis', sans-serif;
+
+}
+
+.box {
+  
+  margin: 0 4px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  border: none;
+}
+
+.box span {
+  display: block;
+  /* background: #3b3b3b; */
+  font-family: 'Share Tech Mono', monospace;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 1440px) {
+  .content{
+
+  }
+  
+  .box span {
+    width: 80px;
+    line-height: 80px;
+    font-size: 64px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  
+  .lnmhacks-sub-slogan{
+    margin-top: -3%;
+  }
+  
+  .box span {
+    width: 80px;
+    line-height: 80px;
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .box span {
+    width: 70px;
+    line-height: 70px;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 479px) {
+  .box {
+    font-size: 10px;
+  }
+
+  .box span {
+    width: 60px;
+    line-height: 60px;
+    font-size: 36px;
+  }
+}
+
+/* CSS for timer ends */
