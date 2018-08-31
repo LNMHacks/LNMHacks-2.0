@@ -1061,6 +1061,7 @@ body::-webkit-scrollbar-thumb
   /* background: #3b3b3b; */
   font-family: 'Share Tech Mono', monospace;
   margin-bottom: 0px;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.6);
 }
 
 @media (min-width: 1440px) {
@@ -1069,8 +1070,8 @@ body::-webkit-scrollbar-thumb
   }
   
   .box span {
-    width: 80px;
-    line-height: 80px;
+    width: 60px;
+    line-height: 60px;
     font-size: 64px;
   }
 }
@@ -1081,8 +1082,8 @@ body::-webkit-scrollbar-thumb
   }
   
   .box span {
-    width: 80px;
-    line-height: 80px;
+    width: 70px;
+    line-height: 70px;
     font-size: 64px;
   }
 }
@@ -1106,5 +1107,12 @@ body::-webkit-scrollbar-thumb
     font-size: 36px;
   }
 }
+.cd--numbers {
+  font-weight: bold;
+  font-size: 3.5em;
+  padding: 0.01em;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
 
 /* CSS for timer ends */
