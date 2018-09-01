@@ -244,7 +244,23 @@
                     <div class="logo-font lnmhacks-sub-slogan scrollr-0" style="font-family: 'Titillium Web', sans-serif; font-weight:light; color:#282045;">
                         November 3-4 | Jaipur
                     </div>
-                    <div class="logo-font" style="color:#282246; margin-top:50px;">
+                    <div class="cl">
+                        <div id="js-clock">
+                            <div class="box"><span id="js-clock-days">00</span>Days</div>
+                            <div class="box">
+                                <div class="cd--numbers">:</div>
+                            </div>
+                            <div class="box"><span id="js-clock-hours">00</span>Hours</div>
+                            <div class="box">
+                                <div class="cd--numbers">:</div>
+                            </div>
+                            <div class="box"><span id="js-clock-minutes">00</span>Minutes</div>
+                            <div class="box">
+                                <div class="cd--numbers">:</div>
+                            </div>
+                            <div class="box"><span id="js-clock-seconds">00</span>Seconds</div>
+                        </div></div>
+                    <div class="logo-font" style="color:#282246; margin-top:30px;">
                         <a href="https://lnmhacks2.hackerearth.com/" target="_blank"><button type="button" class="btn btn-primary btn-lg" style="cursor:pointer; background-color: #4285f4;padding: 12px 25px;" disabled="true"><span style="font-size: 1.11em;">Registrations Opening Soon!</span></button></a>
                     </div>
                 </div>
@@ -849,6 +865,55 @@
                 =====================================-->
             </div>
 		</div>
+        <script type="text/javascript">
+            (function() {
+
+                var deadline = '2018-11-13 12:00';
+
+                function pad(num, size) {
+                    var s = "0" + num;
+                    return s.substr(s.length-size);
+                }
+
+                function getTimeRemaining(endtime) {
+                    var t = Date.parse(endtime) - Date.parse(new Date()),
+                        seconds = Math.floor((t / 1000) % 60),
+                        minutes = Math.floor((t / 1000 / 60) % 60),
+                        hours = Math.floor((t / (1000 * 60 * 60)) % 24),
+                        days = Math.floor(t / (1000 * 60 * 60 * 24));
+
+                    return {
+                        'total': t,
+                        'days': days,
+                        'hours': hours,
+                        'minutes': minutes,
+                        'seconds': seconds
+                    };
+                }
+
+                function clock(id, endtime) {
+                    var days = document.getElementById(id + '-days')
+                    hours = document.getElementById(id + '-hours'),
+                        minutes = document.getElementById(id + '-minutes'),
+                        seconds = document.getElementById(id + '-seconds');
+
+                    var timeinterval = setInterval(function() {
+                        var t = getTimeRemaining(endtime);
+
+                        if (t.total <= 0){
+                            clearInterval(timeinterval);
+                        } else {
+                            days.innerHTML = pad(t.days, 2);
+                            hours.innerHTML = pad(t.hours, 2);
+                            minutes.innerHTML = pad(t.minutes, 2);
+                            seconds.innerHTML = pad(t.seconds, 2);
+                        }
+                    }, 1000);
+                }
+
+                clock('js-clock', deadline);
+            })();
+        </script>
         <script src="https://code.getmdl.io/1.2.1/material.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
