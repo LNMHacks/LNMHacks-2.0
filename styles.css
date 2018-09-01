@@ -264,7 +264,7 @@ a img{
 
   .lnmhacks-wear .lnmhacks-screen-image {
     width: 40%;
-    z-index: 1;
+    /*z-index: 1;*/
   }
 
 
@@ -358,7 +358,7 @@ a img{
 
 
 .lnmhacks-wear-band {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0;
   width: 100%;
   text-align: center;
