@@ -183,7 +183,7 @@ a img{
   height: 600px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('images/bg.jpg') center 30% no-repeat;
+  background: url('images/website (1).png') center 30% no-repeat;
 /*  opacity: 0.8;*/
   background-size: cover;
 }
@@ -194,6 +194,7 @@ a img{
   color:#f44645;
   
   font-weight: 500;
+ 
 }
 
 .lnmhacks-slogan {
@@ -264,7 +265,7 @@ a img{
 
   .lnmhacks-wear .lnmhacks-screen-image {
     width: 40%;
-    z-index: 1;
+    /* z-index: 1; */
   }
 
 
@@ -330,12 +331,20 @@ a img{
     }
 
 @media (max-width: 450px) { 
+   .content{
+     
+     left: 50% !important;
+   }
     .lnmhacks-wear-section {
       position: relative;
       /*background: url('images/wear.jpg');*/
       background: #fff;
       background-repeat: no-repeat;
       min-height: 900px;
+    
+    }
+    .lnmhack_3{
+      width: 400px !important;
     }
 }
 
@@ -348,17 +357,11 @@ a img{
       min-height: 300px;
     }
 
-@media (max-width: 450px) { 
-    .lnmhacks-wear-section.judges-pk {
-      position: relative;
-      background: #fff;
-      background-repeat: no-repeat;
-    }
-}
+
 
 
 .lnmhacks-wear-band {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -540,12 +543,31 @@ a img{
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
+
+  .lnmhack_3{
+    margin-top: -10%;
+  }
+  .lnmhacks-sub-slogan{
+    margin-top: -2%;
+  }
+  .content{
+    margin-left: 15% !important;
+    margin-top: 5% !important;
+  } 
+   .dat{
+    margin-left: 20% !important;
+    margin-top: -3% !important;
+  }
+  .logoimg{
+    margin-top: -9%;
+   }
   .lnmhacks-navigation-container {
     display: none;
   }
 
   .lnmhacks-title {
     display: none !important;
+    margin-top: -2%;
   }
   
   .register-cta{
@@ -641,6 +663,10 @@ a img{
   .lnmhacks-footer .mdl-mega-footer--bottom-section {
     display: none;
   }
+  .reg{
+    display: none !important;
+    
+  }
 }
 
 /*======================================
@@ -733,10 +759,11 @@ a img{
 .content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 20%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 35px;
+  /* font-size: 35px; */
+
   line-height: 40px;
   font-family: 'Lato', sans-serif;
   color: #ecf0f1;
@@ -749,6 +776,7 @@ a img{
   overflow: hidden;
   height: 40px;
   padding: 0 40px;
+  
 }
 /*.visible:before {
   content: '{';
@@ -795,7 +823,7 @@ a img{
   font-family: 'Titillium Web', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
   color:#f44645;
-  font-size: 32px !important;
+  font-size: 10px !important;
   font-weight: 500;
   line-height: 40px;
   margin-top: 0;
@@ -1017,23 +1045,7 @@ body::-webkit-scrollbar-thumb
   justify-content: center;
   flex-direction: column;
 } */
- .cl {
-  /* color: #cdd3de; */
-  
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
+ 
  
 
 #js-clock {
@@ -1066,26 +1078,29 @@ body::-webkit-scrollbar-thumb
 
 @media (min-width: 1440px) {
   .content{
-
+    margin-left: -25% !important;
   }
   
   .box span {
     width: 60px;
     line-height: 60px;
     font-size: 64px;
+    
   }
 }
 @media (min-width: 768px) and (max-width: 1439px) {
-  
-  .lnmhacks-sub-slogan{
-    margin-top: -3%;
-  }
+ 
   
   .box span {
     width: 70px;
     line-height: 70px;
     font-size: 64px;
   }
+  #js-clock {
+    margin-top: 1%;
+    margin-left: 4%;
+  }
+  
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -1094,9 +1109,14 @@ body::-webkit-scrollbar-thumb
     line-height: 70px;
     font-size: 48px;
   }
+  .content{
+    margin-top: 10% !important;
+   
+  }
 }
 
 @media (max-width: 479px) {
+  
   .box {
     font-size: 10px;
   }
@@ -1116,3 +1136,4 @@ body::-webkit-scrollbar-thumb
 
 
 /* CSS for timer ends */
+
