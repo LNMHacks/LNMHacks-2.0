@@ -207,3 +207,41 @@ html,body{font-family:"Helvetica","Arial",sans-serif;font-size:14px;font-weight:
 .contact-content{
 	color:#949699;
 }
+
+@media only screen and (max-width: 765px) {
+
+	.map-col{
+		height:60vh;
+	}
+	.contact-details{
+		width: 30vw !important;
+	}
+	.hidden-cols{
+		display: none;
+	}
+
+}
+@media only screen and (max-width: 995px) {
+	.map-col{
+		height:80vh;
+	}
+	.contact-content{
+		display: none;
+	}
+	#contactsubheader{
+		text-align: center !important;
+	}
+	.head-text{
+		text-align: center !important;
+	}
+	.contact-form{
+		margin: 20px auto !important;
+	}
+	.details-row{
+		margin-left:6vw !important;
+	}
+	.contact-heading{
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
