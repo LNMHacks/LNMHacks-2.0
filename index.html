@@ -60,7 +60,9 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="pk.css">
+    <link rel="stylesheet" type="text/css" href="timer.css">
     <link rel="stylesheet" type="text/css" href="sponsor.css">
+    <link rel="stylesheet" type="text/css" href="cards.css">
     <link rel='stylesheet' type="text/css" href='formStyle.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -82,7 +84,7 @@
 <!--=====================================
              NAVIGATION
 =====================================-->
-<nav class="navbar navbar-light bg-light navbar-expand-md" style="z-index: 2">
+<nav class="navbar navbar-expand-md" style="z-index: 2">
     <!-- Brand -->
     <a class="navbar-brand" href="#"><img class="lnmhacks-logo-image" src="images/lnmhacks2.png"></a>
 
@@ -94,25 +96,25 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav navbar-nav ml-auto">
             <li class="nav-item">
-                <a style="color: #757575; text-decoration: none;" data-scroll="" href="index.html#about">ABOUT</a>
+                <a style="color: #2b142c; text-decoration: none;" data-scroll="" href="index.html#about">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a style="color: #757575; text-decoration: none;" data-scroll="" href="index.html#tracks">TRACKS</a>
+                <a style="color: #2b142c; text-decoration: none;" data-scroll="" href="index.html#tracks">TRACKS</a>
             </li>
             <li class="nav-item">
-                <a style="color: #757575; text-decoration: none;" data-scroll=""
+                <a style="color: #2b142c; text-decoration: none;" data-scroll=""
                    href="https://lnmhacks2.hackerearth.com/sprints/lnmhacks-20-1/faq/#faq">FAQ</a>
             </li>
             <li class="nav-item">
-                <a style="color: #757575; text-decoration: none;" data-scroll="" href="index.html#Gallery">GALLERY</a>
+                <a style="color: #2b142c; text-decoration: none;" data-scroll="" href="index.html#Gallery">GALLERY</a>
             </li>
             <li class="nav-item">
-                <a style="color: #757575; text-decoration: none;" data-scroll=""
+                <a style="color: #2b142c; text-decoration: none;" data-scroll=""
                    href="https://drive.google.com/file/d/1yWG32YmV9zSTf8E_2UQFNUBjlA3W9YAt/view?usp=sharing" target="_">SPONSOR
                     US</a>
             </li>
             <li class="nav-item">
-                <a style="color: #757575; text-decoration: none;" data-scroll="" href="index.html#Contactus">CONTACT
+                <a style="color: #2b142c; text-decoration: none;" data-scroll="" href="index.html#Contactus">CONTACT
                     US</a>
             </li>
         </ul>
@@ -122,6 +124,24 @@
              END OF NAVIGATION
 =====================================-->
 
+<div class="timer">
+    <div class="cl">
+        <div id="js-clock">
+            <div class="circle">
+                <div class="box"><span id="js-clock-days">00</span><br/>Days</div>
+            </div>
+            <div class="circle">
+                <div class="box"><span id="js-clock-hours">00</span><br/>Hours</div>
+            </div>
+            <div class="circle">
+                <div class="box"><span id="js-clock-minutes">00</span><br/>Mins</div>
+            </div>
+            <div class="circle">
+                <div class="box"><span id="js-clock-seconds">00</span><br/>Sec</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="lnmhacks-content mdl-layout__content">
     <a id="top" name="top"></a>
@@ -144,27 +164,10 @@
              style="margin-left: 11%;font-family: 'Titillium Web', sans-serif; font-weight:light; color:#282045;">
             November 3-4 | Jaipur
         </div>
-        <div class="cl">
-            <div id="js-clock">
-                <div class="box"><span id="js-clock-days">00</span>Days</div>
-                <div class="box">
-                    <div class="cd--numbers">:</div>
-                </div>
-                <div class="box"><span id="js-clock-hours">00</span>Hours</div>
-                <div class="box">
-                    <div class="cd--numbers">:</div>
-                </div>
-                <div class="box"><span id="js-clock-minutes">00</span>Minutes</div>
-                <div class="box">
-                    <div class="cd--numbers">:</div>
-                </div>
-                <div class="box"><span id="js-clock-seconds">00</span>Seconds</div>
-            </div>
-        </div>
         <div class="logo-font reg" style="color:#2a6ea3; margin-left: 8%;margin-top: 3% !important;">
             <a href="https://lnmhacks2.hackerearth.com/" target="_blank">
                 <button type="button" class="btn btn-primary btn-lg"
-                        style="cursor:pointer; background-color: #4285f4;padding: 12px 25px;" disabled="true"><span
+                        style="cursor:pointer; background-color: #0015a1;padding: 12px 25px; border-radius: 25px;"><span
                         style="font-size: 1.11em;">Registrations Opening Soon!</span></button>
             </a>
         </div>
@@ -247,263 +250,551 @@
 
 
     <!--=====================================
-                 Sponsor of 2.0
-    =====================================-->
+                             Sponsor of 2.0
+                =====================================-->
     <div class="lnmhacks-customized-section smoothScroll" style="margin-bottom:40px;">
         <div class="lnmhacks-sponsors-section-image">
             <div class="lnmhacks-customized-section-text">
                 <div class="pk-light-font pk-text-style head-text" style="margin-bottom: 40px;">
                     Some Previous Sponsors' Highlight
                 </div>
+
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="spons-content-big">
-                            <span class="helper"></span>
-                            <a href="https://github.com/" target="_blank"><img alt="Github" border="0"
-                                                                               src="images/sponsors/github.png"></a>
-                            <div class="sponsorText lar">Title Sponsor</div>
+                    <div class="col-md-3 col-sm-12 mx-auto" data-aos="fadeInDown">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front" style="margin-top:15%;">
+                                <!-- <p style="margin-top:10%; color:darkslateblue"></p> -->
+                                <img src="images/sponsors/github.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Title Sponsor</h2>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row" style="padding-bottom: 30px; padding-top: 10px;">
-                    <div class="col-sm-12 col-md-4">
-                        <div class="spons-content-med">
-                            <span class="helper"></span>
-                            <a href="https://about.gitlab.com/" target="_blank"><img alt="Gitlab" border="0"
-                                                                                     src="images/sponsors/gitlab.png"></a>
-                            <div class="sponsorText med">Diversity Grant</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="spons-content-med">
-                            <span class="helper"></span>
-                            <a href="https://www.hackerearth.com/" target="_blank"><img alt="HackerEarth" border="0"
-                                                                                        src="images/sponsors/hackerearth.png"></a>
-                            <div class="sponsorText med">Platform Partner</div>
+
+                <!-- 2 cards here -->
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3" data-aos="fade-up" data-aos="fadeInDown">
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/gitlab.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Diversity Sponsor</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
-                        <div class="spons-content-med">
-                            <span class="helper"></span>
-                            <a href="https://balsamiq.com/" target="_blank"><img alt="Balsamiq" border="0"
-                                                                                 src="images/sponsors/balsamiq.png"></a>
-                            <div class="sponsorText med">Silver Sponsor</div>
+                    <div class="col-md-3" data-aos="fadeInDown">
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/eatmynews.png" style="z-index: 3px;padding-top: 20px;" width="100%"
+                                     height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Media Partner</h2>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="http://radix.co.in/" target="_blank"><img alt="Radix" border="0"
-                                                                               src="images/sponsors/tech.png"></a>
-                            <div class="sponsorText sma">Domain Partner</div>
+
+                <!-- 3 cards here -->
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3" data-aos="fade-up">
+                        <div class="container_card" style="width:230px;margin:auto;">
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/hackerearth.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Platform Sponsor</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://www.digitalocean.com/" target="_blank"><img alt="DigitalOcean" border="0"
-                                                                                         src="images/sponsors/digital.png"></a>
-                            <div class="sponsorText sma">Cloud Partner</div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+                        <div class="container_card" style="width:230px;margin:auto;">
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/balsamiq.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Silver Sponsor</h2>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://zulipchat.com/" target="_blank"><img alt="Zulip" border="0"
-                                                                                  src="images/sponsors/zulip.png"></a>
-                            <div class="sponsorText sma">Chat Platform Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://sketchapp.com/" target="_blank"><img alt="Sketch" border="0"
-                                                                                  src="images/sponsors/sketch.svg"></a>
-                            <div class="sponsorText sma">Design Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://www.kaggle.com/" target="_blank"><img alt="Kaggle" border="0"
-                                                                                   src="images/sponsors/kaggle.png"></a>
-                            <div class="sponsorText sma">Technology Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://www.stickermule.com" target="_blank"><img alt="StickerMule" border="0"
-                                                                                       src="images/sponsors/stickermule.png"></a>
-                            <div class="sponsorText sma">Sticker Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://www.jetbrains.com/" target="_blank"><img alt="Jetbrains" border="0"
-                                                                                      src="images/sponsors/jetbrains.png"></a>
-                            <div class="sponsorText sma">IDE Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://temboo.com/" target="_blank"><img alt="Temboo" border="0"
-                                                                               src="images/sponsors/temboo-logo.png"></a>
-                            <div class="sponsorText sma">Technology Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://www.twilio.com/" target="_blank"><img alt="Twilio" border="0"
-                                                                                   src="images/sponsors/twilio.png"></a>
-                            <div class="sponsorText sma">General Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://www.heroku.com/" target="_blank"><img alt="Heroku" border="0"
-                                                                                   src="images/sponsors/heroku.png"></a>
-                            <div class="sponsorText sma">General Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://challengerocket.com/" target="_blank"><img alt="challenge rocket"
-                                                                                        border="0"
-                                                                                        src="images/sponsors/cr.png"></a>
-                            <div class="sponsorText sma">General Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="http://hacksociety.tech/" target="_blank"><img alt="hacksociety" border="0"
-                                                                                    src="images/sponsors/hackersociety.png"></a>
-                            <div class="sponsorText sma">Hackathon Partner</div>
-                        </div>
-                    </div>
-                    <!--<div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="https://frapp.in/" target="_blank"><img alt="Frapp" border="0" src="images/sponsors/frapp.png"></a>
-                            <div class="sponsorText sma">Student Partner</div>
-                        </div>
-                    </div>-->
-                    <!--<div class="col-sm-3">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="http://startupoasis.in/" target="_blank"><img alt="StartupOasis" border="0" src="images/sponsors/startup.png"></a>
-                            <div class="sponsorText sma">Startup Partner</div>
-                        </div>
-                    </div>-->
-                    <div class="col-sm-3 ml-auto">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="http://eatmynews.com/" target="_blank"><img alt="Eat My News" border="0"
-                                                                                 src="images/sponsors/eatmynews.png"></a>
-                            <div class="sponsorText sma">Media Partner</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 mr-auto">
-                        <div class="spons-content">
-                            <span class="helper"></span>
-                            <a href="http://dubeat.com/" target="_blank"><img alt="Du beat" border="0"
-                                                                              src="images/sponsors/dub.png"></a>
-                            <div class="sponsorText sma">Media Partner</div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/hackersociety.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Title Sponsor</h2>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
+                <!-- 3 cards here -->
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/tech.png" style="z-index: 3px;padding-top: 20px;" width="100%"
+                                     height="100%">
+                                <div class="inner">
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Domain Partner</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/digital.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Cloud Partner</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/zulip.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Chat Platform Partner</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 3 cards here -->
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/sketch.svg" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Design Partner</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/kaggle.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Technology Partner</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/stickermule.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Sticker Partner</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 3 cards here -->
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/jetbrains.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>IDE Sponsors</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/temboo-logo.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>Technology Partner</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/twilio.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>General Partner</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 3 cards here -->
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/heroku.png" style="z-index: 3px;padding-top: 20px;"
+                                     width="100%" height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>General Partner</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up">
+
+                        <div class="container_card" style="width:230px;margin:auto;">
+
+                            <div class="front">
+                                <p style="margin-top:10%; color:darkslateblue"></p>
+                                <img src="images/sponsors/cr.png" style="z-index: 3px;padding-top: 20px;" width="100%"
+                                     height="100%">
+                                <div class="inner">
+
+                                    <!-- <h1>Github</h1> -->
+                                </div>
+                            </div>
+
+                            <div class="back">
+                                <div class="inner">
+                                    <h2>General Partner</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- <div class="row" style="padding-bottom: 30px; padding-top: 10px;">
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="spons-content-med">
+                                                    <span class="helper"></span>
+                                                    <a href="https://about.gitlab.com/" target="_blank"><img alt="Gitlab" border="0" src="images/sponsors/gitlab.png"></a>
+                                                    <div class="sponsorText med">Diversity Grant</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="spons-content-med">
+                                                    <span class="helper"></span>
+                                                    <a href="https://www.hackerearth.com/" target="_blank"><img alt="HackerEarth" border="0" src="images/sponsors/hackerearth.png"></a>
+                                                    <div class="sponsorText med">Platform Partner</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-4">
+                                                <div class="spons-content-med">
+                                                    <span class="helper"></span>
+                                                    <a href="https://balsamiq.com/" target="_blank"><img alt="Balsamiq" border="0" src="images/sponsors/balsamiq.png"></a>
+                                                    <div class="sponsorText med">Silver Sponsor</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="http://radix.co.in/" target="_blank"><img alt="Radix" border="0" src="images/sponsors/tech.png"></a>
+                                                    <div class="sponsorText sma">Domain Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://www.digitalocean.com/" target="_blank"><img alt="DigitalOcean" border="0" src="images/sponsors/digital.png"></a>
+                                                    <div class="sponsorText sma">Cloud Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://zulipchat.com/" target="_blank"><img alt="Zulip" border="0" src="images/sponsors/zulip.png"></a>
+                                                    <div class="sponsorText sma">Chat Platform Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://sketchapp.com/" target="_blank"><img alt="Sketch" border="0" src="images/sponsors/sketch.svg"></a>
+                                                    <div class="sponsorText sma">Design Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://www.kaggle.com/" target="_blank"><img alt="Kaggle" border="0" src="images/sponsors/kaggle.png"></a>
+                                                    <div class="sponsorText sma">Technology Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://www.stickermule.com" target="_blank"><img alt="StickerMule" border="0" src="images/sponsors/stickermule.png"></a>
+                                                    <div class="sponsorText sma">Sticker Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://www.jetbrains.com/" target="_blank"><img alt="Jetbrains" border="0" src="images/sponsors/jetbrains.png"></a>
+                                                    <div class="sponsorText sma">IDE Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://temboo.com/" target="_blank"><img alt="Temboo" border="0" src="images/sponsors/temboo-logo.png"></a>
+                                                    <div class="sponsorText sma">Technology Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://www.twilio.com/" target="_blank"><img alt="Twilio" border="0" src="images/sponsors/twilio.png"></a>
+                                                    <div class="sponsorText sma">General Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://www.heroku.com/" target="_blank"><img alt="Heroku" border="0" src="images/sponsors/heroku.png"></a>
+                                                    <div class="sponsorText sma">General Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="https://challengerocket.com/" target="_blank"><img alt="challenge rocket" border="0" src="images/sponsors/cr.png"></a>
+                                                    <div class="sponsorText sma">General Partner</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="http://hacksociety.tech/" target="_blank"><img alt="hacksociety" border="0" src="images/sponsors/hackersociety.png"></a>
+                                                    <div class="sponsorText sma">Hackathon Partner</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-3 ml-auto">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="http://eatmynews.com/" target="_blank"><img alt="Eat My News" border="0" src="images/sponsors/eatmynews.png"></a>
+                                                    <div class="sponsorText sma">Media Partner</div>
+                                                   </div>
+                                            </div>
+                                            <div class="col-sm-3 mr-auto">
+                                                <div class="spons-content">
+                                                    <span class="helper"></span>
+                                                    <a href="http://dubeat.com/" target="_blank"><img alt="Du beat" border="0" src="images/sponsors/dub.png"></a>
+                                                    <div class="sponsorText sma">Media Partner</div>
+                                                </div>
+                                            </div>
+
+                                        </div> -->
             </div>
         </div>
     </div>
     <!--=====================================
-                End of Sponsor of 2.0
-    =====================================-->
-
-
-    <!--=====================================
-                 Powered BY
-    =====================================-->
-
-
-    <div class="lnmhacks-customized-section smoothScroll">
-        <div class="lnmhacks-sponsors-section-image">
-            <div class="lnmhacks-customized-section-text">
-                <div class="pk-light-font pk-text-style head-text" style="margin-bottom: 50px">
-                    Powered By
-                </div>
-                <!--=====================================
-                             Clubs Partipating
-                =====================================-->
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img alt="Cybros" border="0" src="images/clubs/cybros.png" width="200">
-                    </div>
-                    <div class="col-sm-3">
-                        <img alt="IEEE" border="0" src="images/clubs/ieee.png" width="200">
-                    </div>
-                    <div class="col-sm-3">
-                        <img alt="IIC" border="0" src="images/clubs/iic.png" width="200">
-                    </div>
-                    <div class="col-sm-3">
-                        <img alt="Phoenix" border="0" src="images/clubs/phoenix.png" width="200">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--=====================================
-                End of Powered By
-    =====================================-->
-
-
-    <!--=====================================
-                Community Parter Section
-    =====================================-->
-
-
-    <div class="lnmhacks-customized-section smoothScroll">
-        <div class="lnmhacks-sponsors-section-image">
-            <div class="lnmhacks-customized-section-text">
-                <div class="pk-light-font pk-text-style head-text" style="margin-bottom: 50px">
-                    Community Partners
-                </div>
-                <!--=====================================
-                             Clubs Partipating
-                =====================================-->
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img alt="mozilla" border="0" src="images/community/mozilla.png" width="170" height="160"
-                             style="margin-bottom: 40px;">
-                    </div>
-                    <div class="col-sm-3">
-                        <img alt="CSI" border="0" src="images/community/csi.png" width="125"
-                             style="margin-bottom: 40px;">
-                    </div>
-                    <div class="col-sm-3">
-                        <img alt="WIE" border="0" src="images/community/wie.png" width="150"
-                             style="margin-bottom: 40px;">
-                    </div>
-                    <div class="col-sm-3">
-                        <img alt="Women Who Code" border="0" src="images/community/wwcd.jpg" width="180" height="160"
-                             style="margin-bottom: 40px;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--=====================================
-         End of Community Parter Section
-    =====================================-->
+                    End of Sponsor of 2.0
+        =====================================-->
 
 
     <!--=====================================
@@ -553,7 +844,6 @@
             </a>
         </div>
         <div class="col-sm-2">
-
         </div>
     </div>
 
@@ -733,7 +1023,7 @@
                                   placeholder="Message"></textarea>
                     </div>
                     <input type="submit" value="Submit" id="input-submit"
-                           style="background-color: #17a2b8; border-color: #17a2b8; font-size: 15px;">
+                           style="cursor:pointer; background-color: #0015a1;padding: 12px 25px; border-radius: 25px; font-size: 15px">
                 </form>
             </section>
         </div>
@@ -744,113 +1034,199 @@
         </div>
     </div>
 
-    <div class="row details-row" style="margin-top: 5vh;">
-        <div class="col-lg-1 col-md-1 hidden-cols"></div>
-        <div class="col-lg-3 col-md-3 contact-details">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    <a href="tel:+91 7615000402" style="color:black;"><i class="fas fa-phone icons" style="font-size: 5vh;"></i></a>
-                </div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                    <p>
-                        <a href="tel:+91 7615000402" style="color:black;"><h4 class="contact-heading">Phone</h4></a>
-                        <span class="contact-content">
-								+91 76150 00402
-								</span>
-                    </p>
+    <div class="" style="margin: 0 auto;">
+        <div class="row details-row" style="margin-top: 5vh;">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 contact-details">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <a href="tel:+91 7615000402" style="color:black;"><i class="fas fa-phone icons"
+                                                                                     style="font-size: 5vh;"></i></a>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                <p>
+                                    <a href="tel:+91 7615000402" style="color:black;"><h4 class="contact-heading">
+                                        Phone</h4></a>
+                                    <span class="contact-content">
+                                    +91 76150 00402
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-1 col-md-1 hidden-cols"></div>-->
+                    <div class="col-lg-4 col-md-4 contact-details">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <a href="mailto:info.lnmiit@lnmiit.ac.in" style="color:black;"><i
+                                        class="fas fa-envelope icons" style="font-size: 5vh;"></i></a>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                <p>
+                                    <a href="mailto:info.lnmiit@lnmiit.ac.in" style="color:black;"><h4
+                                            class="contact-heading">Email Us</h4></a>
+                                    <a href="mailto:info.lnmiit@lnmiit.ac.in" class="contact-content">
+                                        info.lnmiit@lnmiit.ac.in
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-1 col-md-1 hidden-cols"></div>-->
+                    <div class="col-lg-4 col-md-4 contact-details">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <a href="https://goo.gl/maps/5wNkk4FoFDy" style="color: black;"><i
+                                        class="fas fa-map-marker icons" style="font-size: 5vh;"></i></a>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                <p>
+                                    <a href="https://goo.gl/maps/5wNkk4FoFDy" style="color: black;"><h4
+                                            class="contact-heading">Location</h4></a>
+                                    <span class="contact-content">
+                                    Rupa ki Nangal,Via-Jamdoli,<br> Jaipur, Rajasthan 302031
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </div>
-        <div class="col-lg-1 col-md-1 hidden-cols"></div>
-        <div class="col-lg-3 col-md-3 contact-details">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    <a href="mailto:info.lnmiit@lnmiit.ac.in" style="color:black;"><i class="fas fa-envelope icons" style="font-size: 5vh;"></i></a>
-                </div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                    <p>
-                        <a href="mailto:info.lnmiit@lnmiit.ac.in" style="color:black;"><h4 class="contact-heading">Email Us</h4></a>
-                        <a href="mailto:info.lnmiit@lnmiit.ac.in" class="contact-content">
-                            info.lnmiit@lnmiit.ac.in
-                        </a>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-lg-1 col-md-1 hidden-cols"></div>
-        <div class="col-lg-md-3 col-md-3 contact-details">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                    <a href="https://goo.gl/maps/5wNkk4FoFDy" style="color: black;"><i class="fas fa-map-marker icons" style="font-size: 5vh;"></i></a>
-                </div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                    <p>
-                        <a href="https://goo.gl/maps/5wNkk4FoFDy" style="color: black;"><h4 class="contact-heading">Location</h4></a>
-                        <span class="contact-content">
-								Rupa ki Nangal,Via-Jamdoli,<br> Jaipur, Rajasthan 302031
-								</span>
-                    </p>
-                </div>
-            </div>
-
+            <div class="col-lg-1"></div>
         </div>
     </div>
 
-        <!--=====================================
-                    MAP SECTION
-        =====================================-->
+    <!--=====================================
+                MAP SECTION
+    =====================================-->
 
-        <!--=====================================
-                    FOOTER SECTION
-        =====================================-->
-        <footer class="lnmhacks-footer mdl-mega-footer">
-            <div class="lnmhacks-wear-band-text"
-                 style="max-width:100%; margin-left:0; height: 95px;">
-                <div class="mdl-typography--display-2 mdl-typography--font-thin smoothScroll">
-                    Stay Updated through our social feed
-                </div>
-                <p class="mdl-typography--headline mdl-typography--font-thin">
-                    From behind the scenes to our latest additions , we cover it all.
-                </p>
+    <!--=====================================
+                FOOTER SECTION
+    =====================================-->
+    <!--<footer class="container text-center" >-->
+    <!--<div class="footer-wrapper">-->
+    <!--<div class="row">-->
+    <!--<div class="col-sm-3">-->
+    <!--<div class="row">-->
+    <!--<div class="col-sm-2">-->
+    <!--<a class="" href="https://www.facebook.com/lnmhacks/"-->
+    <!--style="color:#2ec3db !important;">-->
+    <!--<i class="fa fa-facebook fa-2x"></i></a>-->
+    <!--</div>-->
+    <!--<div class="col-sm-2">-->
+    <!--<a class="" href="https://twitter.com/lnmhacks"-->
+    <!--style="color:#2ec3db !important;">-->
+    <!--<i class="fa fa-twitter fa-2x"></i></a>-->
+    <!--</div>-->
+    <!--<div class="col-sm-2">-->
+    <!--<a class="" href="https://medium.com/@lnmhacks"-->
+    <!--style="color:#2ec3db !important;">-->
+    <!--<i class="fa fa-medium fa-2x"></i></a>-->
+    <!--</div>-->
+    <!--<div class="col-sm-2">-->
+    <!--<a class="" href="https://www.linkedin.com/company/lnm-hacks/"-->
+    <!--style="color:#2ec3db !important;">-->
+    <!--<i class="fa fa-linkedin fa-2x"></i></a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-sm-5"></div>-->
+    <!--<div class="col-sm-2">-->
+    <!--<a href=""><h4>Code of Conduct</h4></a>-->
+    <!--</div>-->
+    <!--<div class="col-sm-2">-->
+    <!--<a href=""><h4>Privacy Policy</h4></a>-->
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--</div>-->
+    <!--</footer>-->
+    <!--<footer class="lnmhacks-footer mdl-mega-footer">-->
+        <!--<div class="mdl-mega-footer&#45;&#45;top-section" style="height: 105px;" id="Contactus">-->
+            <!--<div class="mdl-grid" align="center">-->
+                <!--<div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+                <!--</div>-->
+                <!--<div class="mdl-cell mdl-cell&#45;&#45;3-col" style="height: 38px;">-->
+                    <!--<a class="mdl-mega-footer&#45;&#45;social-btn" href="https://www.facebook.com/lnmhacks/"-->
+                       <!--style="color: #0015a1 !important;">-->
+                        <!--<i class="fa fa-facebook fa-2x"></i></a> &nbsp;-->
+                    <!--<a class="mdl-mega-footer&#45;&#45;social-btn" href="https://twitter.com/lnmhacks"-->
+                       <!--style="color: #0015a1 !important;">-->
+                        <!--<i class="fa fa-twitter fa-2x"></i></a> &nbsp;-->
+                    <!--<a class="mdl-mega-footer&#45;&#45;social-btn" href="https://medium.com/@lnmhacks"-->
+                       <!--style="color: #0015a1 !important;">-->
+                        <!--<i class="fa fa-medium fa-2x"></i></a>&nbsp;-->
+                    <!--<a class="mdl-mega-footer&#45;&#45;social-btn" href="https://www.linkedin.com/company/lnm-hacks/"-->
+                       <!--style="color: #0015a1 !important;">-->
+                        <!--<i class="fa fa-linkedin fa-2x"></i></a>-->
+                <!--</div>-->
+                <!--<br>-->
+            <!--</div>-->
+            <!--<p class="pk-light-font">© 2017 LNMHacks.</p>-->
+            <!--<p class="pk-light-font">More information coming soon. Stay updated through our social channels. Join the-->
+                <!--#hacksquad.</p>-->
+        <!--</div>-->
+        <!--<div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
+            <!--<div class="mdl-mega-footer&#45;&#45;right-section">-->
+                <!--<a class="pk-light-font" href="index.html#top" style="margin-right: 30px;font-size: 40px;"><i-->
+                        <!--class="fas fa-chevron-up"></i></a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</footer>-->
+
+    <footer class="lnmhacks-footer mdl-mega-footer">
+        <div class="lnmhacks-wear-band-text"
+             style="max-width:100%; margin-left:0;">
+            <div class="mdl-typography--display-2 mdl-typography--font-thin smoothScroll">
+                Stay Updated through our social feed
             </div>
-            <div class="mdl-mega-footer--top-section" style="height: 105px;" id="Contactus">
-                <div class="mdl-grid" align="center">
-                    <div class="mdl-cell mdl-cell--4-col">
+            <p class="mdl-typography--headline mdl-typography--font-thin">
+                From behind the scenes to our latest additions , we cover it all.
+            </p>
+        </div>
+        <div class="mdl-mega-footer--top-section">
+            <div class="mdl-grid" align="center">
+                <div class="mdl-cell mdl-cell--4-col">
+
+                </div>
+                <div class="mdl-cell mdl-cell--4-col">
+                    <a class="mdl-mega-footer--social-btn" href="https://www.facebook.com/lnmhacks/"
+                       style="color: #0015a1 !important;">
+                        <i class="fa fa-facebook fa-2x"></i></a> &nbsp;
+                    <a class="mdl-mega-footer--social-btn" href="https://twitter.com/lnmhacks"
+                       style="color: #0015a1 !important;">
+                        <i class="fa fa-twitter fa-2x"></i></a> &nbsp;
+                    <a class="mdl-mega-footer--social-btn" href="https://medium.com/@lnmhacks"
+                       style="color: #0015a1 !important;">
+                        <i class="fa fa-medium fa-2x"></i></a>
+                    <a class="mdl-mega-footer--social-btn" href="https://www.linkedin.com/company/lnm-hacks/"
+                    style="color: #0015a1 !important;">
+                    <i class="fa fa-linkedin fa-2x"></i></a>
+                </div>
+                <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-mega-footer--right-section">
+                        <a class="pk-light-font" href="index.html#top">Back to Top <i class="material-icons">expand_less</i></a>
                     </div>
-                    <div class="mdl-cell mdl-cell--3-col" style="height: 38px;">
-                        <a class="mdl-mega-footer--social-btn" href="https://www.facebook.com/lnmhacks/"
-                           style="color:#2ec3db !important;">
-                            <i class="fa fa-facebook fa-2x"></i></a> &nbsp;
-                        <a class="mdl-mega-footer--social-btn" href="https://twitter.com/lnmhacks"
-                           style="color:#2ec3db !important;">
-                            <i class="fa fa-twitter fa-2x"></i></a> &nbsp;
-                        <a class="mdl-mega-footer--social-btn" href="https://medium.com/@lnmhacks"
-                           style="color:#2ec3db !important;">
-                            <i class="fa fa-medium fa-2x"></i></a>&nbsp;
-                        <a class="mdl-mega-footer--social-btn" href="https://www.linkedin.com/company/lnm-hacks/"
-                           style="color:#2ec3db !important;">
-                            <i class="fa fa-linkedin fa-2x"></i></a>
-                    </div>
-                    <br>
-                </div>
-                <p class="pk-light-font">© 2017 LNMHacks.</p>
-                <p class="pk-light-font">More information coming soon. Stay updated through our social channels. Join the
-                    #hacksquad.</p>
-            </div>
-            <div class="mdl-cell mdl-cell--4-col">
-                <div class="mdl-mega-footer--right-section">
-                    <a class="pk-light-font" href="index.html#top">Back to Top <i
-                            class="material-icons">expand_less</i></a>
                 </div>
             </div>
-        </footer>
+
+        </div>
+        <div class="mdl-mega-footer--middle-section" style= "text-align:center;">
+            <p class="pk-light-font">© 2017 LNMHacks.</p>
+            <p class="pk-light-font">More information coming soon. Stay updated through our social channels. Join the #hacksquad.</p>
+        </div>
+    </footer>
 
     <!--=====================================
                 END OF FOOTER SECTION
     =====================================-->
-    </div>
+
+    <!--=====================================
+                END OF FOOTER SECTION
+    =====================================-->
+</div>
 </div>
 <script type="text/javascript">
     (function () {

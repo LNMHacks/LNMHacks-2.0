@@ -184,7 +184,7 @@ html,body{font-family:"Helvetica","Arial",sans-serif;font-size:14px;font-weight:
 		.mdl-layout__content{
 			-ms-flex:0 1 auto;
 			position:relative;
-			display:inline-block;
+			/*display:inline-block;*/
 			overflow-y:auto;
 			overflow-x:hidden;
 			-webkit-flex-grow:1;
@@ -202,7 +202,8 @@ html,body{font-family:"Helvetica","Arial",sans-serif;font-size:14px;font-weight:
 }
 .icons{
 	padding-top: 2vh;
-	color:#17a2b8;
+	cursor:pointer;
+	color: #0015a1;
 }
 .contact-content{
 	color:#949699;
