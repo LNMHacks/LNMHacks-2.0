@@ -1497,6 +1497,7 @@ div#js-clock {
   }
   @media (max-width:710px){
 
+
     #js-clock-min {
     
     display: flex !important;
@@ -1644,6 +1645,12 @@ div#js-clock {
 
 
   @media (max-width:500px){
+   .fas{
+      font-size: 3vh !important;
+    }
+    .pk-text-style{
+      font-size: 3vh !important;
+    }
     #js-clock-min {
     
     display: flex !important;
