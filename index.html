@@ -64,7 +64,7 @@
     <link rel="stylesheet" type="text/css" href="sponsor.css">
     <link rel="stylesheet" type="text/css" href="cards.css">
     <link rel='stylesheet' type="text/css" href='formStyle.css'>
-    <!--<link rel='stylesheet' type="text/css" href='video.css'>-->
+    <link rel='stylesheet' type="text/css" href='video.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -85,7 +85,7 @@
 <!--=====================================
              NAVIGATION
 =====================================-->
-<nav class="navbar navbar-expand-md">
+<nav class="navbar navbar-expand-md" id="top">
     <!-- Brand -->
     <a class="navbar-brand" href="#"><img class="lnmhacks-logo-image" src="images/lnmhacks-02.png"></a>
 
@@ -104,7 +104,7 @@
             </li>
             <li class="nav-item">
                 <a style="text-decoration: none;" data-scroll=""
-                   target="_blank" href="https://lnmhacks2.hackerearth.com/sprints/lnmhacks-20-1/faq/#faq">FAQ</a>
+                   target="_blank" >FAQ</a>
             </li>
             <li class="nav-item">
                 <a style="text-decoration: none;" data-scroll="" href="#gallery">GALLERY</a>
@@ -125,7 +125,7 @@
              END OF NAVIGATION
 =====================================-->
 
-<div class="timer">
+<div class="timer glow">
     <div class="cl">
         <div id="js-clock">
             <div class="circle">
@@ -145,7 +145,7 @@
 </div>
 
 <div class="lnmhacks-content mdl-layout__content">
-    <a id="top" class="smoothScroll" name="top"></a>
+    <a id="top" class="smoothScroll"></a>
     <div class="lnmhacks-be-together-section ">
         <div>
             <img class="lnmhack_3" src="images/lhlogo.png" style="width: 600px;margin-left: -50px;">
@@ -183,10 +183,10 @@
                           </div>
         </div>
         <div class="logo-font reg" style="color:#2a6ea3; margin-left: 8%;margin-top: 3% !important;">
-            <a href="https://lnmhacks2.hackerearth.com/" target="_blank">
-                <button type="button" class="btn btn-primary btn-lg"
-                        style="cursor:pointer; background-color: #0015a1;padding: 12px 25px; border-radius: 25px;"><span
-                        style="font-size: 1.11em;">Registrations Opening Soon!</span></button>
+            <a  target="_blank">
+                <button type="button" class="btn btn-primary btn-lg mdl-button--disabled"
+                        style="cursor:pointer; background-color: #0015a1;padding: 12px 25px; border-radius: 25px;" disabled><span
+                        style="font-size: 1.11em;" aria-disabled="true">Registrations Opening Soon!</span></button>
             </a>
         </div>
     </div>
@@ -195,15 +195,13 @@
     <!--=====================================
                  Tracks
     =====================================-->
-    <div class="lnmhacks-wear-section">
+    <div class="">
         <div class="lnmhacks-wear-band">
             <div class="lnmhacks-wear-band-text">
                 <div class="pk-light-font pk-text-style head-text" id="tracks">
                     Tracks
                 </div>
-                <p class="mdl-typography--headline mdl-typography--font-thin pk-text-style">
-                    We're rolling out more tracks soon.
-                </p>
+            
                 <div class="row">
                     <div class="col-sm-2 onHover">
                         <img alt="Internet of Things" border="0" src="images/tracks/iot.png" style="overflow: hidden" width="175">
@@ -303,20 +301,15 @@
                         <div class="container_card" style="width:230px;margin:auto;">
 
                             <div class="front image-fluid" style="margin-top:15%;">
-                                <!-- <p style="margin-top:10%; color:darkslateblue"></p> -->
                                 <img src="images/sponsors/github.png" style="z-index: 3px;padding-top: 85px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
-
+                                    
                             <div class="back">
                                 <div class="inner">
                                     <h2>Title Sponsor</h2>
-
                                 </div>
                             </div>
                         </div>
@@ -333,10 +326,9 @@
                                 <img src="images/sponsors/gitlab.png" style="z-index: 3px;padding-top: 63px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                   
 
                             <div class="back">
                                 <div class="inner">
@@ -354,12 +346,9 @@
                                 <img src="images/sponsors/eatmynews.png" style="z-index: 3px;padding-top: 55px;" width="100%"
                                      height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
-
+                                   
                             <div class="back">
                                 <div class="inner">
                                     <h2>Media Partner</h2>
@@ -379,11 +368,9 @@
                                 <img src="images/sponsors/hackerearth.png" style="z-index: 3px;padding-top: 80px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -400,10 +387,9 @@
                                 <img src="images/sponsors/balsamiq.png" style="z-index: 3px;padding-top: 55px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -423,11 +409,9 @@
                                 <img src="images/sponsors/hackersociety.png" style="z-index: 3px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -451,10 +435,9 @@
                                 <img src="images/sponsors/tech.png" style="z-index: 3px;padding-top: 30px;" width="100%"
                                      height="100%">
                                 <div class="inner">
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -474,11 +457,9 @@
                                 <img src="images/sponsors/digital.png" style="z-index: 3px;padding-top: 8px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -498,12 +479,9 @@
                                 <img src="images/sponsors/zulip.png" style="z-index: 3px;">
                                 width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
-
+                                    
                             <div class="back">
                                 <div class="inner">
                                     <h2>Chat Platform Partner</h2>
@@ -525,11 +503,9 @@
                                 <img src="images/sponsors/sketch.svg" style="z-index: 3px;padding-top: 55px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                   
 
                             <div class="back">
                                 <div class="inner">
@@ -549,11 +525,9 @@
                                 <img src="images/sponsors/kaggle.png" style="z-index: 3px;padding-top: 55px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -573,11 +547,9 @@
                                 <img src="images/sponsors/stickermule.png" style="z-index: 3px;padding-top: 20px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -601,11 +573,9 @@
                                 <img src="images/sponsors/jetbrains.png" style="z-index: 3px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -625,10 +595,9 @@
                                 <img src="images/sponsors/temboo-logo.png" style="z-index: 3px;padding-top: 63px;  "
                                      width="100%" height="100%">
                                 <div class="inner">
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                    
 
                             <div class="back">
                                 <div class="inner">
@@ -648,13 +617,10 @@
                                 <img src="images/sponsors/twilio.png" style="z-index: 3px;padding-top: 63px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                                         
                             </div>
-                            <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
-
+                            
                             <div class="back">
                                 <div class="inner">
                                     <h2>General Partner</h2>
@@ -677,11 +643,9 @@
                                 <img src="images/sponsors/heroku.png" style="z-index: 3px;padding-top: 55px;"
                                      width="100%" height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
+                                
 
                             <div class="back">
                                 <div class="inner">
@@ -700,16 +664,12 @@
                                 <img src="images/sponsors/cr.png" style="z-index: 3px;padding-top: 70px;" width="100%"
                                      height="100%">
                                 <div class="inner">
-
-                                    <!-- <h1>Github</h1> -->
                                 </div>
                             </div>
-                                    <a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">expand_less</i></a>
 
                             <div class="back">
                                 <div class="inner">
                                     <h2>General Partner</h2>
-                                    <!--<a class="pk-light-font" href="#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 3px 5px #757575;">chevron-right</i></a>-->
                                 </div>
                             </div>
                         </div>
@@ -786,150 +746,10 @@
     =====================================-->
 
 
-    <!--                 <div class="lnmhacks-wear-section judges-pk">
-                        <div class="lnmhacks-wear-band">
-                            <div class="lnmhacks-wear-band-text">
-                                <div class="pk-light-font pk-text-style head-text" id="tracks">
-                                    Event Schedule
-                                </div>
-                                <p class="mdl-typography--headline mdl-typography--font-thin pk-text-style">
-                                    Timeline
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <ul class="block-tabs">
-                                <li class="active"><i class="et-line-calendar"></i><strong>Day 1</strong> <span>- 11 November 2017</span></li>
-                                <li class=""><i class="et-line-calendar"></i><strong>Day 2</strong> <span>- 12 November 2017</span></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-7">
-                            <ul class="block-tab">
-                                <li class="active">
-                                    <div class="block-date">
-                                        <i class="et-line-calendar"></i>
-                                        <strong>Day 1</strong> <span>- 11 November 2017</span>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Registration at 08:00 AM </span>
-                                        <div class="block-text">
-                                            <p>Registrations begin/Party Starts. Try to come as early as possible to grab the best spot.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Introduction at 10:00 AM</span>
-                                            <div class="block-text">
-                                                   <p>Introduction about the event, revealing the themes of the event.</p>
-                                            </div>
-                                    </div>
-
-                                     <div class="block-detail">
-                                        <span class="subheading_time">Hacking Starts at 11:00 AM</span>
-                                        <div class="block-text">
-                                            <p>The game is on. Start brainstorming!</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Lunch at 1:45 PM</span>
-                                        <div class="block-text">
-                                            <p>Lunch time.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Dinner at 8:00 AM</span>
-                                        <div class="block-text">
-                                            <p>Dinner time.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Fun Time at 11:00 PM</span>
-                                        <div class="block-text">
-                                                <p>Time for some fun! Let's play some game and grab a bite.</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-
-                                <li>
-                                    <div class="block-date">
-                                        <i class="et-line-calendar"></i>
-                                        <strong>Day 2</strong>
-                                        <span>- 12 November 2017</span>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Snacks at 3:00 AM</span>
-                                        <div class="block-text">
-                                            <p>Want some food ?</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">First Evaluation at 07:00 AM</span>
-                                        <div class="block-text">
-                                            <p>Submit your progress. Judges will evaluate your idea based on originality.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">BreakFast at 8:00 AM</span>
-                                        <div class="block-text">
-                                            <p>More Food? We don't mind.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Hackathon Submission at 12:00 NOON</span>
-                                        <div class="block-text">
-                                            <p>Submit your Work to the organising Team for Evaluation.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Lunch at 01:00 PM</span>
-                                        <div class="block-text">
-                                            <p>Lets Eat and Get ready for final phase!</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Declaration and Pitching of selected teams at 2:00 PM</span>
-                                        <div class="block-text">
-                                            <p>Congratulations!</br> Prepare your pitch, you are what you sell yourself</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="block-detail">
-                                        <span class="subheading_time">Results at  5:00 PM</span>
-                                        <div class="block-text">
-                                            <p>Judgement day. Winner gets the dough!</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
-
+ 
     <!--=====================================
             END OF TIME TABLE SECTION
     =====================================-->
-
-
-    <!--<p class="pk-light-font base-text" style="margin-bottom: -40px; margin-top: 40px;">Interested in sponsoring us?-->
-    <!--<br>-->
-    <!--<br>-->
-    <!--Mail us at: <a class="lnmhacks-link pk-light-font"-->
-    <!--href="mailto:sponsors@lnmhacks.com?subject=Sponsorship%20proposal" target="_blank">sponsors@lnmhacks.com-->
-    <!--</a>-->
-    <!--</p>-->
 
     <div class="row" style="margin-top: 10vh;">
         <div class="col-lg-1"></div>
@@ -978,34 +798,37 @@
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                 <p>
-                                    <a href="tel:+91 7615000402" style="color:black;"><div class="pk-light-font pk-text-style">
+                                    <a href="tel:+91 7615000402" style="color:#0015a1; opacity: 1; "><div class="pk-light-font pk-text-style head-text">
                                         Phone</div></a>
                                     <span class="contact-content">
+                                    Ayush Gupta :    
                                     +91 76150 00402
+                                    </span>
+                                     <span class="contact-content" style="display: block;">
+                                    Madhav Khandelwal:    
+                                    +91 9799276361
                                     </span>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <!--<div class="col-lg-1 col-md-1 hidden-cols"></div>-->
                     <div class="col-lg-4 col-md-4 contact-details">
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                                <a href="mailto:info@lnmhacks.com" style="color:black;"><i
+                                <a href="mailto:support@lnmhacks.com" style="color:black;"><i
                                         class="fas fa-envelope icons" style="font-size: 5vh;"></i></a>
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                                 <p>
-                                    <a href="mailto:info@lnmhacks.com" style="color:black;"><div
+                                    <a href="mailto:support@lnmhacks.com" style="color:black;"><div
                                             class="pk-light-font pk-text-style">Email Us</div></a>
-                                    <a href="mailto:info@lnmhacks.com" class="contact-content">
-                                        info@lnmhacks.com
+                                    <a href="mailto:support@lnmhacks.com" class="contact-content">
+                                        support@lnmhacks.com
                                     </a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <!--<div class="col-lg-1 col-md-1 hidden-cols"></div>-->
                     <div class="col-lg-4 col-md-4 contact-details">
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -1036,77 +859,6 @@
     <!--=====================================
                 FOOTER SECTION
     =====================================-->
-    <!--<footer class="container text-center" >-->
-    <!--<div class="footer-wrapper">-->
-    <!--<div class="row">-->
-    <!--<div class="col-sm-3">-->
-    <!--<div class="row">-->
-    <!--<div class="col-sm-2">-->
-    <!--<a class="" href="https://www.facebook.com/lnmhacks/"-->
-    <!--style="color:#2ec3db !important;">-->
-    <!--<i class="fa fa-facebook fa-2x"></i></a>-->
-    <!--</div>-->
-    <!--<div class="col-sm-2">-->
-    <!--<a class="" href="https://twitter.com/lnmhacks"-->
-    <!--style="color:#2ec3db !important;">-->
-    <!--<i class="fa fa-twitter fa-2x"></i></a>-->
-    <!--</div>-->
-    <!--<div class="col-sm-2">-->
-    <!--<a class="" href="https://medium.com/@lnmhacks"-->
-    <!--style="color:#2ec3db !important;">-->
-    <!--<i class="fa fa-medium fa-2x"></i></a>-->
-    <!--</div>-->
-    <!--<div class="col-sm-2">-->
-    <!--<a class="" href="https://www.linkedin.com/company/lnm-hacks/"-->
-    <!--style="color:#2ec3db !important;">-->
-    <!--<i class="fa fa-linkedin fa-2x"></i></a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="col-sm-5"></div>-->
-    <!--<div class="col-sm-2">-->
-    <!--<a href=""><h4>Code of Conduct</h4></a>-->
-    <!--</div>-->
-    <!--<div class="col-sm-2">-->
-    <!--<a href=""><h4>Privacy Policy</h4></a>-->
-    <!--</div>-->
-
-    <!--</div>-->
-    <!--</div>-->
-    <!--</footer>-->
-    <!--<footer class="lnmhacks-footer mdl-mega-footer">-->
-        <!--<div class="mdl-mega-footer&#45;&#45;top-section" style="height: 105px;" id="Contactus">-->
-            <!--<div class="mdl-grid" align="center">-->
-                <!--<div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
-                <!--</div>-->
-                <!--<div class="mdl-cell mdl-cell&#45;&#45;3-col" style="height: 38px;">-->
-                    <!--<a class="mdl-mega-footer&#45;&#45;social-btn" href="https://www.facebook.com/lnmhacks/"-->
-                       <!--style="color: #0015a1 !important;">-->
-                        <!--<i class="fa fa-facebook fa-2x"></i></a> &nbsp;-->
-                    <!--<a class="mdl-mega-footer&#45;&#45;social-btn" href="https://twitter.com/lnmhacks"-->
-                       <!--style="color: #0015a1 !important;">-->
-                        <!--<i class="fa fa-twitter fa-2x"></i></a> &nbsp;-->
-                    <!--<a class="mdl-mega-footer&#45;&#45;social-btn" href="https://medium.com/@lnmhacks"-->
-                       <!--style="color: #0015a1 !important;">-->
-                        <!--<i class="fa fa-medium fa-2x"></i></a>&nbsp;-->
-                    <!--<a class="mdl-mega-footer&#45;&#45;social-btn" href="https://www.linkedin.com/company/lnm-hacks/"-->
-                       <!--style="color: #0015a1 !important;">-->
-                        <!--<i class="fa fa-linkedin fa-2x"></i></a>-->
-                <!--</div>-->
-                <!--<br>-->
-            <!--</div>-->
-            <!--<p class="pk-light-font">© 2017 LNMHacks.</p>-->
-            <!--<p class="pk-light-font">More information coming soon. Stay updated through our social channels. Join the-->
-                <!--#hacksquad.</p>-->
-        <!--</div>-->
-        <!--<div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
-            <!--<div class="mdl-mega-footer&#45;&#45;right-section">-->
-                <!--<a class="pk-light-font" href="index.html#top" style="margin-right: 30px;font-size: 40px;"><i-->
-                        <!--class="fas fa-chevron-up"></i></a>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</footer>-->
-
     <footer class="lnmhacks-footer mdl-mega-footer">
         <div class="lnmhacks-wear-band-text"
              style="max-width:100%; margin-left:0;">
@@ -1136,11 +888,6 @@
                     style="color: #0015a1 !important;">
                     <i class="fa fa-linkedin fa-2x"></i></a>
                 </div>
-                <!--<div class="mdl-cell mdl-cell&#45;&#45;4-col">-->
-                    <!--<div class="mdl-mega-footer&#45;&#45;right-section">-->
-                        <!--<a class="pk-light-font" href="index.html#top"><i class="material-icons" style="font-size: 48px ;border-radius: 50%; background-color: #0015a1; color: #fff; box-shadow: 0 10px 5px">expand_less</i></a>-->
-                    <!--</div>-->
-                <!--</div>-->
             </div>
 
         </div>
@@ -1163,60 +910,9 @@
 </div>
 </div>
 <script type="text/javascript">
-     
-      
-  
-    (function () {
-
-        var deadline = '2018-11-13 12:00';
-
-        function pad(num, size) {
-            var s = "0" + num;
-            return s.substr(s.length - size);
-        }
-
-        function getTimeRemaining(endtime) {
-            var t = Date.parse(endtime) - Date.parse(new Date()),
-                seconds = Math.floor((t / 1000) % 60),
-                minutes = Math.floor((t / 1000 / 60) % 60),
-                hours = Math.floor((t / (1000 * 60 * 60)) % 24),
-                days = Math.floor(t / (1000 * 60 * 60 * 24));
-
-            return {
-                'total': t,
-                'days': days,
-                'hours': hours,
-                'minutes': minutes,
-                'seconds': seconds
-            };
-        }
-
-        function clock(id, endtime) {
-            var days = document.getElementById(id + '-days')
-            hours = document.getElementById(id + '-hours'),
-                minutes = document.getElementById(id + '-minutes'),
-                seconds = document.getElementById(id + '-seconds');
-
-            var timeinterval = setInterval(function () {
-                var t = getTimeRemaining(endtime);
-
-                if (t.total <= 0) {
-                    clearInterval(timeinterval);
-                } else {
-                    days.innerHTML = pad(t.days, 2);
-                    hours.innerHTML = pad(t.hours, 2);
-                    minutes.innerHTML = pad(t.minutes, 2);
-                    seconds.innerHTML = pad(t.seconds, 2);
-                }
-            }, 1000);
-        }
-
-        clock('js-clock', deadline);
-    })();
-
-    (function() {
+     function js_m() {
          
-          var deadline = '2018-11-13 12:00';
+          var deadline = '2018-11-3 11:00';
           
           function pad(num, size) {
               var s = "0" + num;
@@ -1245,6 +941,8 @@
                 minutes = document.getElementById(id + '-minutes'),
                 seconds = document.getElementById(id + '-seconds');
         
+                console.log(days, hours, minutes, seconds);
+
             var timeinterval = setInterval(function() {
               var t = getTimeRemaining(endtime);
         
@@ -1252,16 +950,65 @@
                 clearInterval(timeinterval);
               } else {
           days.innerHTML = pad(t.days, 2);
-          hours.innerHTML = pad(t.hours, 2);
-          minutes.innerHTML = pad(t.minutes, 2);
-          seconds.innerHTML = pad(t.seconds, 2);
+          document.getElementById(id + '-hours').innerHTML = pad(t.hours, 2);
+          document.getElementById(id + '-minutes').innerHTML = pad(t.minutes, 2);
+          document.getElementById(id + '-seconds').innerHTML = pad(t.seconds, 2);
           }
             }, 1000);
           }
         
           clock('js-clock-min', deadline);
-        })();
-
+        }
+       
+       js_m();
+       </script>
+       <script>
+ 
+      
+  
+   function js() {
+        var deadline = '2018-11-3 11:00';
+        function pad(num, size) {
+            var s = "0" + num;
+            return s.substr(s.length - size);
+        }
+        function getTimeRemaining(endtime) {
+            var t = Date.parse(endtime) - Date.parse(new Date()),
+                seconds = Math.floor((t / 1000) % 60),
+                minutes = Math.floor((t / 1000 / 60) % 60),
+                hours = Math.floor((t / (1000 * 60 * 60)) % 24),
+                days = Math.floor(t / (1000 * 60 * 60 * 24));
+            return {
+                'total': t,
+                'days': days,
+                'hours': hours,
+                'minutes': minutes,
+                'seconds': seconds
+            };
+        }
+        function clock(id, endtime) {
+            var days = document.getElementById(id + '-days')
+            hours = document.getElementById(id + '-hours'),
+                minutes = document.getElementById(id + '-minutes'),
+                seconds = document.getElementById(id + '-seconds');
+            var timeinterval = setInterval(function () {
+                var t = getTimeRemaining(endtime);
+                if (t.total <= 0) {
+                    clearInterval(timeinterval);
+                } else {
+                    days.innerHTML = pad(t.days, 2);
+                    hours.innerHTML = pad(t.hours, 2);
+                    minutes.innerHTML = pad(t.minutes, 2);
+                    seconds.innerHTML = pad(t.seconds, 2);
+                }
+            }, 1000);
+        }
+        clock('js-clock', deadline);
+    }
+   
+   
+   js();
+   
         
 </script>
 <script src="https://code.getmdl.io/1.2.1/material.min.js" type="text/javascript"></script>

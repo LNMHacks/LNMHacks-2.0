@@ -18,4 +18,3 @@ sr.reveal('.scrollr-3', { duration: 2900 });
 smoothScroll.init();
 
 });
-

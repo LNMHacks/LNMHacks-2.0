@@ -158,4 +158,9 @@
       border-radius: 10px;
 	border: 1px solid #f1f1f1;		
 }
-
+  .material-icons-s{
+  font-size: 48px ;
+  border-radius: 50%; 
+  background-color: #0015a1; 
+  color: #fff; 
+  box-shadow: 0 3px 5px #757575;}

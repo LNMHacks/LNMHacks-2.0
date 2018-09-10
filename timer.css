@@ -25,3 +25,19 @@
   align-self: center;
   box-shadow: 0px 0px 10px #757575;
 }
+
+.glow {
+  animation: glowing 6000ms infinite;
+}
+
+@keyframes glowing {
+  0% { box-shadow: 0 0 0px #757575; }
+  25% { box-shadow: 0 0 15px #757575; }
+  50% { box-shadow: 0 0 0px #757575; }
+  75% { box-shadow: 0 0 15px #757575; }
+  100% { box-shadow: 0 0 15px #757575; }
+  0% { box-shadow: 0 0 15px #757575; }
+}
+
+
+
